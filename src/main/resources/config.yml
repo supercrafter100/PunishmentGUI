@@ -17,7 +17,6 @@ permissions:
 modules:
 
   warn:
-
     full_auto:
       name: "&eFull auto"
       lore:
@@ -51,7 +50,6 @@ modules:
 
 
   mute:
-
     msg_spam:
       name: "&eMessage spam"
       lore:
@@ -69,3 +67,31 @@ modules:
 
 
 
+  kick:
+    inappropriate_skin:
+      name: "&eInappropriate skin"
+        lore:
+          - " "
+          - "&fHaving an inappropriate skin. For example: a naked man"
+          - " "
+        material: "PLAYER_HEAD"
+        durability: 0
+        executor: "player"
+        offenses:
+          - "kick {target} 30m Please change your skin"
+
+  ban:
+    blacklisted_modifications:
+      name: "&eBlacklisted modifications"
+        lore:
+          - " "
+          - "&fUsing modifications to get an unfair advantage."
+          - "&fFor example: A hacked client."
+          - " "
+        material: "DIAMOND_SWORD"
+        durability: 0
+        executor: "player"
+        offenses:
+          - "tempban {target} 30d Blacklisted modifications"
+          - "tempmute {target} 60d Blacklisted modifications (2nd offense)"
+          - "ipban {target} Blacklisted modifications (repeated offense)"
