@@ -93,5 +93,5 @@ modules:
         executor: "player"
         offenses:
           - "tempban {target} 30d Blacklisted modifications"
-          - "tempmute {target} 60d Blacklisted modifications (2nd offense)"
+          - "tempban {target} 60d Blacklisted modifications (2nd offense)"
           - "ipban {target} Blacklisted modifications (repeated offense)"
