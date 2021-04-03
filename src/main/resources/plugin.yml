@@ -1,0 +1,14 @@
+name: Punishmentgui
+version: ${project.version}
+main: com.supercrafter100.punishmentgui.Main
+load: STARTUP
+authors: [Supercrafter100]
+description: A punishment gui that is easily configurable
+commands:
+  epunish:
+    description: "Punish a player"
+    usage: "/epunish <player>"
+
+  punishgui:
+    description: "The main command of the punishmentgui plugin"
+    usage: "/punishgui <reload>"

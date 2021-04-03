@@ -1,0 +1,71 @@
+messages:
+  config_reloaded: "&aSuccessfully reloaded the configuration file"
+
+  main_usage: "&cUsage: /punishgui <reload>"
+  usage: "&cUsage: /punish <player>"
+
+  no_console: "&cThis command can only be executed by a player"
+  no_permission: "&cYou do not have the required permission to do this!"
+
+  invalid_player: "&cThe specified player has never joined before!"
+
+
+
+permissions:
+  command: "punish.command"
+
+modules:
+
+  warn:
+
+    full_auto:
+      name: "&eFull auto"
+      lore:
+        - " "
+        - "&fMaking a cannon where a clock is present."
+        - "&fThe user can walk away without providing any input"
+        - "&fand the cannon will keep firing"
+        - " "
+      material: "DISPENSER"
+      durability: 0
+
+      executor: "player"
+      offenses:
+        - "warn {target} Full auto is not allowed"
+        - "warn {target} Full auto is not allowed (last warning)"
+        - "tempban {target} 2d Full auto is not allowed server:tntwars"
+
+    team_abuse:
+      name: "&eTeam abuse"
+      lore:
+        - " "
+        - "&fAbusing their rank to unbalance the teams on purpose."
+        - " "
+      material: "DIAMOND_SWORD"
+      durability: 0
+      executor: "console"
+      offenses:
+        - "warn {target} Team abusing is not allowed"
+        - "kick {target} Team abusing is not allowed (last warning)"
+        - "tempban {target} 2d Team abusing is not allowed"
+
+
+  mute:
+
+    msg_spam:
+      name: "&eMessage spam"
+      lore:
+        - " "
+        - "&fSending multiple of the same message to the same person"
+        - "&fat a rapid pace"
+        - " "
+      material: "BOOK"
+      durability: 0
+      executor: "player"
+      offenses:
+        - "tempmute {target} 30m message spam"
+        - "tempmute {target} 1h message spam"
+        - "tempmute {target} 5h message spam"
+
+
+
